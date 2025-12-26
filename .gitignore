@@ -4,3 +4,12 @@
 # Ignore env files
 .env
 .env.local
+
+# 忽略 Terraform 執行檔
+.terraform/
+
+*.tfstate
+*.tfstate.*
+
+*.tfvars
+*.tfvars.json
