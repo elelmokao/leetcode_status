@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'grafana/**' # triggered if any modification at grafana/
+  workflow_dispatch:
 
 jobs:
   terraform:
