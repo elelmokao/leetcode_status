@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
         with:
           cli_config_token: ${{ secrets.TF_API_TOKEN }}
-      
+
       - name: Terraform Apply
         env:
           TF_VAR_grafana_auth: ${{ secrets.GRAFANA_TOKEN }}
